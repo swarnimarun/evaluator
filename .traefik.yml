@@ -1,0 +1,23 @@
+# The name of your plugin as displayed in the Plugins Catalog web UI.
+displayName: evaluator
+
+# For now, `middleware` is the only type available.
+type: middleware
+
+# The import path of your plugin.
+import: github.com/swarnimarun/evaluator
+
+# A brief description of what your plugin is doing.
+summary: Simple Evaluator for quick response analysis. 
+
+# optional
+# iconPath: .assets/icon.png
+
+# Configuration data for your plugin.
+# This is mandatory,
+# and Plugins Catalog will try to execute the plugin with the data you provide as part of its startup validity tests.
+testData:
+  SimpleEval:
+    requestHeaderField: "expected" 
+    responseHeaderField: "message" 
+    kind: Prefix
